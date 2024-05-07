@@ -23,22 +23,18 @@ body {
    width: 100vw;
 }
 /* Navigation Bar Styling */
-.first-nav-container{
-    margin-left: 40px;
-    margin-right: 60px;
-    margin-top: 5px;
-    font-size: 1.2em;
-    color: rgba(70, 43, 3, 0.8);
-    font-weight: 500;
-}
-
-.second-nav-container{
+.first-nav-container, .second-nav-container{
     margin-left: 50px;
     margin-right: 30px;
-    margin-bottom: 50px;
     font-size: 1.2em;
     color: rgba(70, 43, 3, 0.8);
     font-weight: 500;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+.second-nav-container{
+    margin-bottom: 50px;
 }
 
 #logo{
@@ -62,9 +58,6 @@ body {
     color: rgba(70, 43, 3, 1);
     font-weight: 600;
 }
-.nav-item-wraper{
-   
-}
 
 /****
 * Main content style *
@@ -72,9 +65,9 @@ body {
 main {
     margin-bottom: 20px;
 }
-
+/* Hero section */
 .hero {
-    width: 100%;
+    width: 70%;
     min-height: 60vh;
     display: flex;
     justify-content: center;
@@ -88,25 +81,25 @@ main {
     align-items: center;
 }
 .hero-image img {
-    height: 30vh;
-    width: 30vw;
-    border-radius: 10%;
-    margin-top: 20px;
+    height: 50vh;
+    width: 50vw;
+    border-radius: 50%;
 }
 
 .card{
     background-color: transparent;
     border: transparent;
 }
+
 .hero-content h3, .hero-content p {
     color: #000;
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 500;
     text-align: center;
 }
 
 #name {
-    font-size: 2em;
+    font-size: 2.2em;
     text-align: center;
     margin-bottom: 20px;
     font-weight: 700;
@@ -174,15 +167,15 @@ main {
 ** SECTION STYLING **
 *****/
 .section-title{
-    font-size: 35px;
-    margin: 30px;
-    margin-left: 30px;
+justify-content: center;
+    font-size: 2em;
     display: inline-block;
     position: relative;
     padding-left: 37px;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 5px;
-    padding-bottom: 10px;
+    margin-top: 40px;
+    background-color: rgba(250, 249, 245, 1);
+    border-radius: 10px;
+    padding-bottom: 20px;
     padding-right: 10px;
 }
 
@@ -199,7 +192,7 @@ main {
     content: "";
     display: block;
     width: 3px;
-    height: 38px;
+    height: 25px;
     background: #000000;
     margin: 10px auto 0;
 }
@@ -215,44 +208,158 @@ main {
     font-weight: 700;
 }
 .section-title .big-text{
-    letter-spacing: 0.03em;
     display: block;
-    color: #000000;
-    text-transform: uppercase;
+    margin-top: 5px;
+    color: rgba(70, 43, 3, 1);
+    text-transform: capitalize;
+}
+
+/*****
+** SECTION 1: INTRO QOUTE **
+*****/
+.intro-qoute{
+    margin-top: 40px;
+    padding: 10px;
+    padding-left: 40px;
+    background-color: rgba(250, 249, 245, 0.788);
+position: relative;
+justify-content: center;
+align-items: center;
+}
+
+/*****
+** SECTION 2: WEB DEVELOPMENT **
+*****/
+.web-dev{
+    margin-top: 40px;
+    padding: 10px;
+    padding-left: 40px;
+    background-color: rgba(210, 209, 205, 0.551);
+position: relative;
+justify-content: center;
+align-items: center;
+}
+
+/*****
+** SECTION 3: DATA ANALYSIS **
+*****/
+.data-analysis{
+    margin-top: 40px;
+    padding: 10px;
+    padding-left: 40px;
+    background-color: rgba(250, 249, 245, 0.788)
+    ;
+position: relative;
+justify-content: center;
+align-items: center;
 }
 
 
+/*****
+** SECTION 4: TESTIMONIES **
+*****/
+.testimonies{
+    margin-top: 40px;
+    padding: 10px;
+    padding-left: 40px;
+    background-color: rgba(210, 209, 205, 0.551);
+position: relative;
+justify-content: center;
+align-items: center;
+}
+
+/*****
+** SECTION 5: DATA ENGINEERING & DATA SCIENCE **
+*****/
+.future-projects{
+    margin-top: 40px;
+    padding: 10px;
+    padding-left: 40px;
+    background-color: rgba(250, 249, 245, 0.788);
+position: relative;
+justify-content: center;
+align-items: center;
+}
+
+/*****
+** SECTION 6: CLOSING QOUTE **
+*****/
+.closing-qoute{
+    margin-top: 40px;
+    padding: 10px;
+    padding-left: 40px;
+    background-color: rgba(210, 209, 205, 0.551);
+position: relative;
+justify-content: center;
+align-items: center;
+}
+
+/*****
+** MEDIA QUERY SECTION **
+*****/
+
 @media screen and (min-width: 768px) {
-    .header-margin {
-        margin: 30px 10px;
-        font-size: 1em;
+
+    .first-nav-container, .second-nav-container{
+        margin-left: 50px;
+        margin-right: 30px;
+        font-size: 1.2em;
+        }
+    
+    .second-nav-container{
+        margin-bottom: 30px;
+    }
+ 
+
+    .hero {
+        width: 80%;
+        min-height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    
     }
 
     .hero-image img {
-        height: 63vh;
+        height: 35vh;
         width: 30vw;
-        border-radius: 10%;
-        margin-top: 20px;
+        border-radius: 50%;
+        margin-top: 70px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .hero {
+        width: 70%;
+    
+    }
+
+    .hero-image img {
+        height: 45vh;
+        width: 25vw;
+        border-radius: 50%;
+        margin-top: 30px;
+    }
+
+    .hero-content h3, .hero-content p {
+        font-size: 1.2em;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .hero-image img {
-        height: 50vh;
-        width: 20vw;
-        border-radius: 10%;
+        height: 55vh;
+        width: 25vw;
+        border-radius: 50%;
+        margin-top: 0;
+
+    }
+    
+
+    .hero-content h3, .hero-content p {
+        font-size: 1.2em;
     }
 
-    .hero-content h1,
-    .hero-content h6,
-    .hero-content p {
-        font-size: 1em;
-        text-align: center;
-    }
-
-    .hero-content #name {
-        font-size: 3em;
-        margin: 30px 0;
-        text-align: center;
-    }
 }

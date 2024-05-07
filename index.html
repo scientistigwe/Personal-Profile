@@ -30,6 +30,7 @@
 </head>
 
 <body>
+    <!-- Header Section -->
     <header>
         <!-- First Navigation Bar -->
         <!-- Menu items -->
@@ -37,23 +38,22 @@
             <ul class="navbar-nav">
                 <li class="col nav-item">
                     <a class="nav-link" href="#">
-                        <span class="menu-item-text"><img src="./assets/icons/about-me.svg"
-                                alt="Blog and Publication Icon" width="20" height="20"> About
+                        <span class="menu-item-text"><img src="./assets/icons/about-me.svg" alt="About me" width="20"
+                                height="20"> About
                             me</span>
                     </a>
                 </li>
                 <li class="col nav-item">
                     <a class="nav-link" href="#">
-                        <span class="menu-item-text just"><img src="./assets/icons/download.png" alt="Github logo"
-                                width="20" height="20"> CV
+                        <span class="menu-item-text just"><img src="./assets/icons/download.png"
+                                alt="Link to Download CV" width="20" height="20"> CV
                         </span>
                     </a>
                 </li>
                 <li class="col nav-item">
                     <a class="nav-link" href="#">
                         <span class="menu-item-text">
-                            <img src="./assets/icons/contact-me.png" alt="Blog and Publication Icon" width="20"
-                                height="20">
+                            <img src="./assets/icons/contact-me.png" alt="Contact me" width="20" height="20">
                             Contact me
                         </span>
                     </a>
@@ -93,38 +93,37 @@
                             <li class="nav-item">
                                 <a class="nav-link menu-item" aria-current="page" href="#index.html"><span
                                         class="menu-item-text active">
-                                        <img src="./assets/icons/home.png" alt="Blog and Publication Icon" width="20"
-                                            height="20"> Home</span></a>
+                                        <img src="./assets/icons/home.png" alt="Homepage" width="20" height="20">
+                                        Home</span></a>
                             </li>
 
                             <li class="nav-item">
                                 <a class="nav-link" href="#"><span class="menu-item-text"><img
-                                            src="./assets/icons/project.svg" alt="Blog and Publication Icon" width="20"
-                                            height="20"> Projects</span></a>
+                                            src="./assets/icons/project.svg" alt="Projects" width="20" height="20">
+                                        Projects</span></a>
                             </li>
 
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false"><span class="menu-item-text"><img
-                                            src="./assets/icons/sparetime.png" alt="Blog and Publication Icon"
-                                            width="20" height="20">
+                                            src="./assets/icons/sparetime.png" alt="SpareTime" width="20" height="20">
                                         SpareTime</span>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#"><span class="menu-item-text"><img
-                                                    src="./assets/icons/travel.png" alt="Blog and Publication Icon"
-                                                    width="20" height="20"> Travel</span></a>
+                                                    src="./assets/icons/travel.png" alt="Travel page" width="20"
+                                                    height="20"> Travel</span></a>
                                     </li>
                                     <li><a class="dropdown-item" href="#"><span class="menu-item-text"><img
-                                                    src="./assets/icons/game.png" alt="Blog and Publication Icon"
-                                                    width="20" height="20"> Games</span></a>
+                                                    src="./assets/icons/game.png" alt="Games page" width="20"
+                                                    height="20"> Games</span></a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">
                                     <span class="menu-item-text"><img src="./assets/icons/blog_publish.png"
-                                            alt="Blog and Publication Icon" width="25" height="25">Blog &
+                                            alt="Blog and Publication Icon" width="25" height="25"> Blog &
                                         Publication</span>
                                 </a>
                             </li>
@@ -135,6 +134,8 @@
         </nav>
 
     </header>
+
+    <!-- Main Content -->
     <main>
         <div class="container-fluid hero shadow hero-content">
             <div class="row d-flex justify-content-center">
@@ -161,30 +162,98 @@
                     <div class="card">
                         <div class="card-body hero-image">
                             <a>
-                                <img src="./assets/images/hero-image.png" alt="">
+                                <img src="./assets/images/hero-image.png" alt="hero image">
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Travel Tips Section -->
-        <section id="travel-tips">
-            <h2 class="section-title">
-                <span class="section-number">01</span>
-                <span class="small-text">A qoute that sums it all</span>
-                <span class="big-text">Qoute of the day</span>
-            </h2>
 
-            <div class="row">
-                <div class="col d-flex">
-                    <p>
-                        “In the fields of observation chance favors only the prepared mind.”
-                    </p>
-                    <p class="justify-content-end">― Louis Pasteur</p>
-                </div>
+        <!-- Intro Qoute Section -->
+        <div class="container-fluid intro-qoute">
+            <section id="qoute">
+                <h2 class="section-title">
+                    <span class="section-number">01</span>
+                    <span class="small-text">Introduction</span>
+                    <span class="big-text">A Qoute to start the day</span>
+                </h2>
+            </section>
+            <div>
+                <h2>
+                    “In the fields of observation, chance favors only the prepared mind.”
+                </h2>
             </div>
+            <div>
+                <h4 class="d-flex justify-content-center"><strong> ― Louis Pasteur</strong></h4>
+            </div>
+        </div>
+
+        <!-- Web Development Projects Section -->
+        <div class="container-fluid  web-dev">
+            <section id="web-dev">
+                <h2 class="section-title">
+                    <span class="section-number">02</span>
+                    <span class="small-text">Project 1: Web development</span>
+                    <span class="big-text">Software Development Projects</span>
+                </h2>
+            </section>
+        </div>
+
+        <!-- Data Analaysis Projects Section -->
+        <div class="container-fluid data-analysis">
+            <section id="data-analysis">
+                <h2 class="section-title">
+                    <span class="section-number">03</span>
+                    <span class="small-text">Project 2: Data Analysis</span>
+                    <span class="big-text">Data Analysis Projects</span>
+                </h2>
+            </section>
+        </div>
+
+        <!-- Testimonies Section -->
+        <div class="container-fluid testimonies">
+            <section id="testimonies">
+                <h2 class="section-title">
+                    <span class="section-number">04</span>
+                    <span class="small-text">What do people say about me?</span>
+                    <span class="big-text">Testimonies</span>
+                </h2>
+            </section>
+        </div>
+
+        <!-- Future Projects Section -->
+        <div class="container-fluid future-projects">
+            <section id="future-projects">
+                <h2 class="section-title">
+                    <span class="section-number">05</span>
+                    <span class="small-text">Project 3: Future Projects</span>
+                    <span class="big-text">Data Engineering & Data Science Projects</span>
+                </h2>
+            </section>
+        </div>
+
+        <!-- Closing Qoute Section -->
+        <div class="container-fluid closing-qoute">
+            <section id="closing-qoute">
+                <h2 class="section-title">
+                    <span class="section-number">06</span>
+                    <span class="small-text">Introduction</span>
+                    <span class="big-text">A Qoute to end the day</span>
+                </h2>
+            </section>
+            <div>
+                <h2>
+                    “Hard work beats talent when talent fails to work hard.”
+                </h2>
+            </div>
+            <div>
+                <h4 class="d-flex justify-content-center"><strong> ― Kevin Durant</strong></h4>
+            </div>
+        </div>
     </main>
+
+    <!-- Footer Section -->
     <footer>
 
     </footer>

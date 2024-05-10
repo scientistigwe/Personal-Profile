@@ -44,11 +44,73 @@
                     </a>
                 </li>
                 <li class="col nav-item">
-                    <a class="nav-link download-cv" href="..assets/files/Igwe's CV#.pdf" download="#..Igwe's CV.pdf">
-                        <span class="menu-item-text just"><img src="./assets/icons/download.png"
-                                alt="Link to Download CV" width="20" height="20"> CV
-                        </span>
-                    </a>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#cvModal"
+                        data-bs-whatever="scientistigwe@gmail.com"><img src="./assets/icons/download.png"
+                            alt="Link to Download CV" width="20" height="20"> CV</button>
+                    <div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="cvModalLabel">Request CV</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <h6>Requester Information:</h6>
+                                            <div class="input-group multiple-inputs">
+                                                <span class="input-group-text">Sender's Details</span>
+                                                <input type="text" aria-label="First name" class="form-control"
+                                                    placeholder="First Name">
+                                                <input type="text" aria-label="Last name" class="form-control"
+                                                    placeholder="Last Name">
+                                            </div>
+                                            <br>
+                                            <h6>Email Address:</h6>
+                                            <div class="input-group multiple-inputs">
+                                                <span class="input-group-text">@</span>
+                                                <input type="email" aria-label="Email" class="form-control"
+                                                    placeholder="Email Address">
+                                            </div>
+                                            <br>
+                                            <h6>Reason for Request:</h6>
+                                            <select class="form-select">
+                                                <option selected>Select reason for requesting this file</option>
+                                                <option value="1">Job Offer</option>
+                                                <option value="2">Template</option>
+                                                <option value="3">Other</option>
+                                            </select>
+                                            <br>
+                                            <h6>Job Specification URL:</h6>
+                                            <div class="input-group multiple-inputs">
+                                                <span class="input-group-text">URL</span>
+                                                <input type="text" aria-label="URL" class="form-control"
+                                                    placeholder="Enter Job Specification URL or N/A if not applicable">
+                                            </div>
+                                            <br>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Additional
+                                                    Message:</label>
+                                                <textarea class="form-control" id="message-text"
+                                                    placeholder="Enter any additional message regarding this request."></textarea>
+                                            </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Send Request</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
                 </li>
                 <li class="col nav-item">
                     <a class="nav-link" href="#">

@@ -59,6 +59,11 @@ body {
     font-weight: 600;
 }
 
+.download-cv{
+    text-decoration: none;
+    color: rgba(70, 43, 3, 0.8);
+}
+
 /****
 * Main content style *
 ****/

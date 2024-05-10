@@ -107,18 +107,59 @@
                         </div>
 
                     </div>
-
-
-
-
                 </li>
                 <li class="col nav-item">
-                    <a class="nav-link" href="#">
-                        <span class="menu-item-text">
-                            <img src="./assets/icons/contact-me.png" alt="Contact me" width="20" height="20">
-                            Contact me
-                        </span>
-                    </a>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#contactModal"
+                        data-bs-whatever="scientistigwe@gmail.com"><img src="./assets/icons/contact-me.png"
+                            alt="Contact me" width="20" height="20">
+                        Contact me</button>
+                    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="contactModalLabel">Contact Us</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <h5>Your Information:</h5>
+                                            <div class="input-group multiple-inputs">
+                                                <span class="input-group-text">Your Details</span>
+                                                <input type="text" aria-label="First name" class="form-control"
+                                                    placeholder="First Name">
+                                                <input type="text" aria-label="Last name" class="form-control"
+                                                    placeholder="Last Name">
+                                            </div>
+                                            <br>
+                                            <h5>Email Address:</h5>
+                                            <div class="input-group multiple-inputs">
+                                                <span class="input-group-text">@</span>
+                                                <input type="email" aria-label="Email" class="form-control"
+                                                    placeholder="Email Address">
+                                            </div>
+                                            <br>
+                                            <h5>Subject:</h5>
+                                            <input type="text" class="form-control" placeholder="Enter Subject">
+                                            <br>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Message:</label>
+                                                <textarea class="form-control" id="message-text"
+                                                    placeholder="Enter your message here."></textarea>
+                                            </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </li>
                 <li class="col nav-item">
                     <a class="nav-link" href="https://github.com/scientistigwe" target="_blank">

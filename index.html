@@ -58,9 +58,9 @@
                                 </div>
                                 <div class="modal-body">
                                     <p>Thank you for requesting my CV. Please provide the following information to help
-                                        me fulfill your request:</p>
+                                        me fulfill your request.</p>
                                     <form>
-                                        <div class="mb-3">
+                                        <div class="mb-3" required>
                                             <div class="input-group multiple-inputs">
                                                 <span class="input-group-text">Names</span>
                                                 <input type="text" aria-label="First name" class="form-control"
@@ -69,28 +69,26 @@
                                                     placeholder="Last Name">
                                             </div>
                                             <br>
-                                            <div class="input-group multiple-inputs">
+                                            <div class="input-group multiple-inputs" required>
                                                 <span class="input-group-text">Email</span>
                                                 <input type="email" aria-label="Email" class="form-control"
                                                     placeholder="Email Address">
                                             </div>
                                             <br>
-                                            <select class="form-select">
+                                            <select class="form-select" required>
                                                 <option selected>Select reason for requesting this file</option>
                                                 <option value="1">Job Offer</option>
                                                 <option value="2">Template</option>
-                                                <option value="3">Other</option>
+                                                <option value="3">Others</option>
                                             </select>
                                             <br>
-                                            <div class="input-group multiple-inputs">
+                                            <div class="input-group multiple-inputs" required>
                                                 <span class="input-group-text">Job Spec. url</span>
                                                 <input type="text" aria-label="URL" class="form-control"
                                                     placeholder="Enter Job Specification URL or N/A if not applicable">
                                             </div>
                                             <br>
                                             <div class="mb-3">
-                                                <label for="message-text" class="col-form-label">Additional
-                                                    Message:</label>
                                                 <textarea class="form-control" id="message-text"
                                                     placeholder="Enter any additional message regarding this request."></textarea>
                                             </div>

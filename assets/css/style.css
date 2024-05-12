@@ -126,45 +126,45 @@ main {
 }
 @keyframes colorChange1 {
     0% {
-        color: #4169e1;
+        color: #f71616;
     }
 
     25% {
-        color: #1df5e0e7;
+        color: #0d818c;
     }
 
     50% {
-        color: #8A2BE2;
+        color: #760ce8;
     }
 
     75% {
-        color: #66ff99;
+        color: #1981e9;
     }
 
     100% {
-        color: #ff9900;
+        color: #a87d07;
     }
 }
 
 @keyframes colorChange2 {
     0% {
-        color: #40E0D0;
+        color: #0e7dc2;
     }
 
     25% {
-        color: #66ff99;
+        color: #974646;
     }
 
     50% {
-        color: #ff9900;
+        color: #b7831a;
     }
 
     75% {
-        color: #4169e1;
+        color: #1136a3;
     }
 
     100% {
-        color: #8A2BE2;
+        color: #d614dc;
     }
 }
 

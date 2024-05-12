@@ -10,7 +10,7 @@
     <title>Chibueze C. Igwe | Personal Profile</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/logo.png">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -30,32 +30,132 @@
 </head>
 
 <body>
+    <!-- Header Section -->
     <header>
         <!-- First Navigation Bar -->
         <!-- Menu items -->
         <div class="navbar navbar-expand-md row container-fluid first-nav-container">
             <ul class="navbar-nav">
                 <li class="col nav-item">
-                    <a class="nav-link" href="./about.html">
-                        <span class="menu-item-text"><img src="../assets/icons/about-me.svg" alt="About me page"
-                                width="20" height="20"> About
+                    <a class="nav-link" href="#">
+                        <span class="menu-item-text"><img src="../assets/icons/about-me.svg" alt="About me" width="20"
+                                height="20"> About
                             me</span>
                     </a>
                 </li>
                 <li class="col nav-item">
-                    <a class="nav-link" href="#">
-                        <span class="menu-item-text just"><img src="../assets/icons/download.png"
-                                alt="My CV download link" width="20" height="20"> CV
-                        </span>
-                    </a>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#cvModal"
+                        data-bs-whatever="scientistigwe@gmail.com"><img src="../assets/icons/download.png"
+                            alt="Link to Download CV" width="20" height="20"> CV</button>
+                    <div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="cvModalLabel">Request CV</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Thank you for requesting my CV. Please provide the following information to help
+                                        me fulfill your request.</p>
+                                    <form>
+                                        <div class="mb-3" required>
+                                            <div class="input-group multiple-inputs">
+                                                <span class="input-group-text">Names</span>
+                                                <input type="text" aria-label="First name" class="form-control"
+                                                    placeholder="First Name">
+                                                <input type="text" aria-label="Last name" class="form-control"
+                                                    placeholder="Last Name">
+                                            </div>
+                                            <br>
+                                            <div class="input-group multiple-inputs" required>
+                                                <span class="input-group-text">Email</span>
+                                                <input type="email" aria-label="Email" class="form-control"
+                                                    placeholder="Email Address">
+                                            </div>
+                                            <br>
+                                            <select class="form-select" required>
+                                                <option selected>Select reason for requesting this file</option>
+                                                <option value="1">Job Offer</option>
+                                                <option value="2">Template</option>
+                                                <option value="3">Others</option>
+                                            </select>
+                                            <br>
+                                            <div class="input-group multiple-inputs" required>
+                                                <span class="input-group-text">Job Spec. url</span>
+                                                <input type="text" aria-label="URL" class="form-control"
+                                                    placeholder="Enter Job Specification URL or N/A if not applicable">
+                                            </div>
+                                            <br>
+                                            <div class="mb-3">
+                                                <textarea class="form-control" id="message-text"
+                                                    placeholder="Enter any additional message regarding this request."></textarea>
+                                            </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Send Request</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </li>
                 <li class="col nav-item">
-                    <a class="nav-link" href="#">
-                        <span class="menu-item-text">
-                            <img src="../assets/icons/contact-me.png" alt="Contact me form" width="20" height="20">
-                            Contact me
-                        </span>
-                    </a>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#contactModal"
+                        data-bs-whatever="scientistigwe@gmail.com"><img src="../assets/icons/contact-me.png"
+                            alt="Contact me" width="20" height="20">
+                        Contact me</button>
+                    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="contactModalLabel">Contact me</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <h5>Your Information:</h5>
+                                            <div class="input-group multiple-inputs">
+                                                <span class="input-group-text">Your Details</span>
+                                                <input type="text" aria-label="First name" class="form-control"
+                                                    placeholder="First Name">
+                                                <input type="text" aria-label="Last name" class="form-control"
+                                                    placeholder="Last Name">
+                                            </div>
+                                            <br>
+                                            <h5>Email Address:</h5>
+                                            <div class="input-group multiple-inputs">
+                                                <span class="input-group-text">@</span>
+                                                <input type="email" aria-label="Email" class="form-control"
+                                                    placeholder="Email Address">
+                                            </div>
+                                            <br>
+                                            <h5>Subject:</h5>
+                                            <input type="text" class="form-control" placeholder="Enter Subject">
+                                            <br>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Message:</label>
+                                                <textarea class="form-control" id="message-text"
+                                                    placeholder="Enter your message here."></textarea>
+                                            </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </li>
                 <li class="col nav-item">
                     <a class="nav-link" href="https://github.com/scientistigwe" target="_blank">
@@ -87,44 +187,42 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <!-- Menu items -->
-                    <div class="collapse navbar-collapse" id="menu-items">
+                    <div class="collapse navbar-collapse justify-content-md-center" id="menu-items">
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item">
                                 <a class="nav-link menu-item" aria-current="page" href="../index.html"><span
                                         class="menu-item-text">
-                                        <img src="../assets/icons/home.png" alt="Home page" width="20" height="20">
+                                        <img src="../assets/icons/home.png" alt="Homepage" width="20" height="20">
                                         Home</span></a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="./projects.html"><span class="menu-item-text active"><img
-                                            src="../assets/icons/project.svg" alt="projects" width="20" height="20">
+                                <a class="nav-link" href="#"><span class="menu-item-text  active"><img
+                                            src="../assets/icons/project.svg" alt="Projects" width="20" height="20">
                                         Projects</span></a>
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="./travel.html" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false"><span class="menu-item-text"><img
-                                            src="../assets/icons/sparetime.png" alt="SpaeTime page" width="20"
-                                            height="20">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false"><span class="menu-item-text"><img
+                                            src="../assets/icons/sparetime.png" alt="SpareTime" width="20" height="20">
                                         SpareTime</span>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./travel.html"><span class="menu-item-text"><img
+                                    <li><a class="dropdown-item" href="#"><span class="menu-item-text"><img
                                                     src="../assets/icons/travel.png" alt="Travel page" width="20"
                                                     height="20"> Travel</span></a>
                                     </li>
-                                    <li><a class="dropdown-item" href="./games.html"><span class="menu-item-text"><img
+                                    <li><a class="dropdown-item" href="#"><span class="menu-item-text"><img
                                                     src="../assets/icons/game.png" alt="Games page" width="20"
-                                                    height="20">
-                                                Games</span></a>
+                                                    height="20"> Games</span></a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">
                                     <span class="menu-item-text"><img src="../assets/icons/blog_publish.png"
-                                            alt="Blog and Publication Icon" width="25" height="25">Blog &
+                                            alt="Blog and Publication Icon" width="25" height="25"> Blog &
                                         Publication</span>
                                 </a>
                             </li>
@@ -135,36 +233,304 @@
         </nav>
 
     </header>
-    <main>
-        <div class="container-fluid hero shadow hero-content">
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body card-width">
-                            <h3 class="card-title">
-                                <p>Hey there, kindly check back because: </p>
-                                <div class="text-uppercase orange-icon" id="name">This page is loading......
-                                </div>
-                            </h3>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                    </div>
-                </div>
+    <!-- Main Content -->
+    <main>
+        <!-- Intro Qoute Section -->
+        <div class="container-fluid intro-qoute">
+            <section id="qoute">
+                <h2 class="section-title">
+                    <span class="section-number">01</span>
+                    <span class="small-text">Introduction</span>
+                    <span class="big-text">A Qoute to start the day</span>
+                </h2>
+            </section>
+            <div>
+                <h2>
+                    “In the fields of observation, chance favors only the prepared mind.”
+                </h2>
+            </div>
+            <div>
+                <h4 class="d-flex justify-content-center"><strong> ― Louis Pasteur</strong></h4>
             </div>
         </div>
 
-    </main>
-    <footer>
+        <!-- Web Development Projects Section -->
+        <div class="container-fluid  web-dev">
+            <section id="web-dev">
+                <h2 class="section-title">
+                    <span class="section-number">02</span>
+                    <span class="small-text">Project 1: Web development</span>
+                    <span class="big-text">Software Development Projects</span>
+                </h2>
+            </section>
+        </div>
 
+        <!-- Data Analaysis Projects Section -->
+        <div class="container-fluid data-analysis">
+            <section id="data-analysis">
+                <h2 class="section-title">
+                    <span class="section-number">03</span>
+                    <span class="small-text">Project 2: Data Analysis</span>
+                    <span class="big-text">Data Analysis Projects</span>
+                </h2>
+                <h4>Demand Forecasting And Supply Chain Efficiency Through Data Analytics</h4>
+                <div class="card-title">
+                    <p>The objective of this project is to leverage data analytics techniques to enhance demand
+                        forecasting and optimize supply chain management for a fictional Superstore – ABC Superstore.
+                    </p>
+                    <p>This analysis was conducted by utilizing three distinct datasets, each containing valuable
+                        insights into sales
+                        transactions, inventory management, and supply chain operations.</p>
+                </div>
+                <!-- Sales Transactions -->
+                <div class="demand-forecast-slider-container">
+                    <h4>1. Sales Transactions</h4>
+                    <div class="slider-item">
+                        <div class="row kpi-image">
+                            <div class="col-md-10 card img-fluid d-flex justify-content-center">
+                                <img src="../assets/images/Screenshot (144).png" width="auto" height="100%"
+                                    alt="Sales Trend Analysis">
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-body">
+                                    <p class="card-title">
+                                        Key Summary
+                                        - Analyze transaction data over time to identify sales trends and seasonality.
+                                        - Calculate aggregate sales metrics such as total revenue, average transaction
+                                        value,
+                                        and number of transactions per period.
+                                        - Visualize sales trends using time series plots and identify patterns or
+                                        fluctuations
+                                        in sales volume.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="row kpi-image">
+
+                            <div class="col-md-2">
+                                <div class="card-body">
+                                    <p class="card-title">
+                                        Key Summary
+                                        - Analyze transaction data over time to identify sales trends and seasonality.
+                                        - Calculate aggregate sales metrics such as total revenue, average transaction
+                                        value,
+                                        and number of transactions per period.
+                                        - Visualize sales trends using time series plots and identify patterns or
+                                        fluctuations
+                                        in sales volume.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="col-md-10 card img-fluid">
+                                <img src="../assets/images/Screenshot (145).png" width="auto" height="100%"
+                                    alt="Sales Trend Analysis">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="row kpi-image">
+                            <div class="col-md-10 card img-fluid">
+                                <img src="../assets/images/Screenshot (146).png" width="auto" height="100%"
+                                    alt="Sales Trend Analysis">
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-body">
+                                    <p class="card-title">
+                                        Key Summary
+                                        - Analyze transaction data over time to identify sales trends and seasonality.
+                                        - Calculate aggregate sales metrics such as total revenue, average transaction
+                                        value,
+                                        and number of transactions per period.
+                                        - Visualize sales trends using time series plots and identify patterns or
+                                        fluctuations
+                                        in sales volume.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="row kpi-image">
+                            <div class="col-md-2">
+                                <div class="card-body">
+                                    <p class="card-title">
+                                        Key Summary
+                                        - Analyze transaction data over time to identify sales trends and seasonality.
+                                        - Calculate aggregate sales metrics such as total revenue, average transaction
+                                        value,
+                                        and number of transactions per period.
+                                        - Visualize sales trends using time series plots and identify patterns or
+                                        fluctuations
+                                        in sales volume.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="col-md-10 card img-fluid">
+                                <img src="../assets/images/Screenshot (147).png" width="auto" height="100%"
+                                    alt="Sales Trend Analysis">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-button">
+                    <button class="btn btn-primary carousel-control-prev-icon" id="prevBtn"></button>
+                    <button class="btn btn-primary carousel-control-next-icon" id="nextBtn"></button>
+                </div>
+                <!-- Inventory Management -->
+                <div class="demand-forecast-slider-container">
+                    <h4>2. Inventory Management</h4>
+                    <div class="slider-item">
+                        <div class="row kpi-image">
+                            <div class="col-md-10 card img-fluid d-flex justify-content-center">
+                                <img src="../assets/images/Screenshot (144).png" width="auto" height="100%"
+                                    alt="Sales Trend Analysis">
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-body">
+                                    <p class="card-title">
+                                        Key Summary
+                                        - Analyze transaction data over time to identify sales trends and seasonality.
+                                        - Calculate aggregate sales metrics such as total revenue, average transaction
+                                        value,
+                                        and number of transactions per period.
+                                        - Visualize sales trends using time series plots and identify patterns or
+                                        fluctuations
+                                        in sales volume.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="row kpi-image">
+
+                            <div class="col-md-2">
+                                <div class="card-body">
+                                    <p class="card-title">
+                                        Key Summary
+                                        - Analyze transaction data over time to identify sales trends and seasonality.
+                                        - Calculate aggregate sales metrics such as total revenue, average transaction
+                                        value,
+                                        and number of transactions per period.
+                                        - Visualize sales trends using time series plots and identify patterns or
+                                        fluctuations
+                                        in sales volume.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="col-md-10 card img-fluid">
+                                <img src="../assets/images/Screenshot (145).png" width="auto" height="100%"
+                                    alt="Sales Trend Analysis">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="row kpi-image">
+                            <div class="col-md-10 card img-fluid">
+                                <img src="../assets/images/Screenshot (146).png" width="auto" height="100%"
+                                    alt="Sales Trend Analysis">
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card-body">
+                                    <p class="card-title">
+                                        Key Summary
+                                        - Analyze transaction data over time to identify sales trends and seasonality.
+                                        - Calculate aggregate sales metrics such as total revenue, average transaction
+                                        value,
+                                        and number of transactions per period.
+                                        - Visualize sales trends using time series plots and identify patterns or
+                                        fluctuations
+                                        in sales volume.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="row kpi-image">
+                            <div class="col-md-2">
+                                <div class="card-body">
+                                    <p class="card-title">
+                                        Key Summary
+                                        - Analyze transaction data over time to identify sales trends and seasonality.
+                                        - Calculate aggregate sales metrics such as total revenue, average transaction
+                                        value,
+                                        and number of transactions per period.
+                                        - Visualize sales trends using time series plots and identify patterns or
+                                        fluctuations
+                                        in sales volume.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="col-md-10 card img-fluid">
+                                <img src="../assets/images/Screenshot (147).png" width="auto" height="100%"
+                                    alt="Sales Trend Analysis">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-button">
+                    <button class="btn btn-primary carousel-control-prev-icon" id="prevBtn"></button>
+                    <button class="btn btn-primary carousel-control-next-icon" id="nextBtn"></button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Future Projects Section -->
+        <div class="container-fluid future-projects">
+            <section id="future-projects">
+                <h2 class="section-title">
+                    <span class="section-number">05</span>
+                    <span class="small-text">Project 3: Future Projects</span>
+                    <span class="big-text">Data Engineering & Data Science Projects</span>
+                </h2>
+            </section>
+        </div>
+
+        <!-- Closing Qoute Section -->
+        <div class="container-fluid closing-qoute">
+            <section id="closing-qoute">
+                <h2 class="section-title">
+                    <span class="section-number">06</span>
+                    <span class="small-text">Introduction</span>
+                    <span class="big-text">A Qoute to end the day</span>
+                </h2>
+            </section>
+            <div>
+                <h2>
+                    “Hard work beats talent when talent fails to work hard.”
+                </h2>
+            </div>
+            <div>
+                <h4 class="d-flex justify-content-center"><strong> ― Kevin Durant</strong></h4>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-section">
+            <i class="fa fa-linkedin" aria-hidden="true">Linkedin</i>
+            <i class="fa fa-github" aria-hidden="true">Github</i>
+            <i class="fa fa-facebook" aria-hidden="true">Facebook</i>
+        </div>
     </footer>
+
     <!-- Bootstrap Javascript Link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
+
+    <!-- Custom Javascript Link -->
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

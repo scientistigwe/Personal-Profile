@@ -86,7 +86,7 @@ main {
     align-items: center;
 }
 .hero-image img {
-    height: 50vh;
+    height: 100%;
     width: 50vw;
     border-radius: 50%;
 }
@@ -104,7 +104,7 @@ main {
 }
 
 #name {
-    font-size: 2.2em;
+    font-size: 2.5em;
     text-align: center;
     margin-bottom: 20px;
     font-weight: 700;
@@ -173,7 +173,7 @@ main {
 *****/
 .section-title{
 justify-content: center;
-    font-size: 2em;
+    font-size: 1.7em;
     display: inline-block;
     position: relative;
     padding-left: 37px;
@@ -259,6 +259,17 @@ justify-content: center;
 align-items: center;
 }
 
+.kpi-image{
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(210, 209, 205, 0.551);
+    justify-content: center;
+    max-width: 75vw;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    padding: 15px;
+}
 
 /*****
 ** SECTION 4: TESTIMONIES **
@@ -315,7 +326,6 @@ align-items: center;
         margin-bottom: 30px;
     }
  
-
     .hero {
         width: 80%;
         min-height: 30vh;
@@ -327,7 +337,7 @@ align-items: center;
     }
 
     .hero-image img {
-        height: 35vh;
+        height: 100%;
         width: 30vw;
         border-radius: 50%;
         margin-top: 70px;
@@ -342,7 +352,7 @@ align-items: center;
     }
 
     .hero-image img {
-        height: 45vh;
+        height: 100%;
         width: 25vw;
         border-radius: 50%;
         margin-top: 30px;
@@ -355,7 +365,7 @@ align-items: center;
 
 @media screen and (min-width: 1440px) {
     .hero-image img {
-        height: 55vh;
+        height: 100%;
         width: 25vw;
         border-radius: 50%;
         margin-top: 0;

@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     showSlide(currentIndex);
   }
-
   //Auto slide and Button Event Listener
   function startAutoSlide() {
     intervalId = setInterval(nextSlide, 3000); // Adjust interval timing as needed

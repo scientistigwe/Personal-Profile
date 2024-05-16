@@ -233,6 +233,8 @@ align-items: center;
 /*****
 ** SECTION 2: WEB DEVELOPMENT **
 *****/
+
+
 .web-dev{
     margin-top: 40px;
     padding: 10px;
@@ -241,6 +243,10 @@ align-items: center;
 position: relative;
 justify-content: center;
 align-items: center;
+min-height: fit-content;
+}
+.travelease{
+    min-height: 800px;
 }
 
 /*****

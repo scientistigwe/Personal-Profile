@@ -72,7 +72,7 @@ main {
 /* Hero section */
 .hero {
     width: 70%;
-    min-height: 60vh;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

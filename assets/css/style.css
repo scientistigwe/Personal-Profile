@@ -297,19 +297,24 @@ align-items: center;
 .slider-button {
     margin: auto;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .slider-button #prevBtn {
     margin-right: 20px;
 }
-.slider-item span {
+.df-slider-item span,.wd-slider-item span {
     margin: auto;
-    margin-top: 30px;
     text-decoration: none;
     font-weight: 600;
     display: flex;
     max-width: fit-content;
 }
+
+.wd-slider-item h6, .wd-slider-item p{
+    text-decoration: none;
+    text-align: center;
+}
+
 .explore-btn a {
     text-align: center;
     text-decoration: none;
